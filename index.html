@@ -1,10 +1,55 @@
 <!doctype html>
-<html lang=en>
+<html lang="en">
     <head>
-        <meta charset=utf-8>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="stylesheet.css">
         <title>neko.gg</title>
     </head>
+
     <body>
-        <p>yo</p>
+        <div class="banner">
+            <pre>
+            _
+ _ __   ___| | _____   __ _  __ _
+| '_ \ / _ \ |/ / _ \ / _` |/ _` |
+| | | |  __/   < (_) | (_| | (_| |
+|_| |_|\___|_|\_\___(_)__, |\__, |
+                      |___/ |___/
+
++----------+----------+----------+
+|  <label class="collapsible-handle" for="handle-resume">resume</label>  |  <label class="collapsible-handle" for="handle-github">github</label>  |  <label class="collapsible-handle" for="handle-about">about</label>   |
++----------+----------+----------+
+            </pre>
+        </div>
+
+        <div class="body">
+            <section class="collapsible">
+                <input type="radio" name="collapsible" id="handle-resume">
+
+                <div class="collapsible-content">
+                    <p>resume</p>
+                </div>
+            </section>
+
+            <section class="collapsible">
+                <input type="radio" name="collapsible" id="handle-github">
+
+                <div class="collapsible-content">
+                    <p>github</p>
+                </div>
+            </section>
+
+            <section class="collapsible">
+                <input type="radio" name="collapsible" id="handle-about">
+
+                <div class="collapsible-content">
+                    <p>about</p>
+                </div>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <div>(c) Nicola Lagnena</div>
+        </footer>
     </body>
 </html>

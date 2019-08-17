@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: "Source Code Pro", "Consolas", monospace;
+}
+
+pre {
+    font-family: "Source Code Pro", "Consolas", monospace;
+}
+
+.banner {
+    text-align: center;
+}
+
+.banner pre {
+    display: inline-block;
+    text-align: left;
+}
+
+.body {
+    position: relative;
+    display: block;
+    width: 48em;
+    margin: auto;
+}
+
+.body section {
+    position: absolute;
+    top: -2em;
+}
+
+.collapsible > input[type="radio"] {
+    visibility: hidden;
+}
+
+.collapsible > input[type="radio"]:checked ~ .collapsible-content {
+    height: auto;
+    overflow: visible;
+}
+
+.collapsible-content {
+    overflow-y: auto;
+    height: 0;
+    margin-bottom: 2em;
+    transition: height 1s ease;
+}
+
+.collapsible-handle {
+    display: inline-block;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: right;
+    background-color: black;
+}
+
+.footer div {
+    margin-bottom: 1ex;
+    margin-right: 1ex;
+}
